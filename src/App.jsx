@@ -1,5 +1,5 @@
 import React from 'react'
-import { Contact, Hero, MenuPrincipal, Navbar, Services } from './components/index'
+import { Contact, Hero, MenuPrincipal, Navbar, Rejoindre, Services } from './components/index'
 import styles from './index'
 
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
       <Hero />
       <MenuPrincipal />
       <Services />
+      <Rejoindre />
       <Contact />
     </div>
   )

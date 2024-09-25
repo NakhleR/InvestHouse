@@ -3,7 +3,7 @@ import styles from '../index'
 
 const Services = () => {
     return (
-        <section id="clients" className={`${styles.paddingY} ${styles.paddingX} ${styles.flexCenter} flex-col relative`}>
+        <section id="services" className={`${styles.paddingY} h-screen ${styles.paddingX} ${styles.flexCenter} flex-col relative`}>
             <div className='absolute z-0 w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient' />
 
             <div className={`w-full 
