@@ -3,7 +3,8 @@ import Hero from "./Hero";
 import MenuPrincipal from "./MenuPrincipal";
 import Services from "./Services";
 import Contact from "./Contact";
-import Rejoindre from "./Rejoindre";
+import CardGrid from "./card-hover";
+import { BentoGrid } from "./bento-grid";
 
 export {
     Navbar,
@@ -11,5 +12,6 @@ export {
     MenuPrincipal,
     Services,
     Contact,
-    Rejoindre,
+    CardGrid,
+    BentoGrid
 }

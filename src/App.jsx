@@ -1,22 +1,34 @@
-import React from 'react'
-import { Contact, Hero, MenuPrincipal, Navbar, Rejoindre, Services } from './components/index'
-import styles from './index'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Contact, Hero, MenuPrincipal, Navbar, Services } from './components/index';
+import './index.css';
+import { Maintenance, Rejoindre } from './views';
+import styles from './index';
 
 const App = () => {
   return (
-    <div className='bg-primary w-full overflow-hidden'>
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Navbar />
-        </div>
+    <BrowserRouter>
+      <div className='bg-primary w-full overflow-hidden'>
+        <Routes>
+          <Route path='/' element={
+            <div>
+              <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+                <div className={`${styles.boxWidth}`}>
+                  <Navbar />
+                </div>
+              </div>
+              <Hero />
+              <MenuPrincipal />
+              <Services />
+              <Contact />
+            </div>
+          } />
+          <Route path='/rejoindre' element={<Rejoindre />} />
+          <Route path='/maintenance' element={<Maintenance />} />
+        </Routes>
       </div>
-      <Hero />
-      <MenuPrincipal />
-      <Services />
-      <Rejoindre />
-      <Contact />
-    </div>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

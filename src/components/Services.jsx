@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from '../index'
+import CardGrid from './card-hover'
+import { projects } from '../constants'
 
 const Services = () => {
     return (
@@ -13,10 +15,7 @@ const Services = () => {
                     Mes <br className='sm:block hidden' /> Services
                 </h1>
                 <div className='w-full md:mt-0 mt-6'>
-                    <p className={`${styles.paragraph} text-left max-w-[450px]`}>
-                        Everything you need to accept card payments and grow
-                        your business anywhere on the planet.
-                    </p>
+                    <CardGrid items={projects} nig="grid-cols-2" />
                 </div>
             </div>
         </section>
